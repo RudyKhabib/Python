@@ -1,0 +1,6 @@
+scholarship = int(input('¬ведите стипендию: '))
+payment = int(input('¬ведите оплату жиль€: '))
+credit = 0
+for i in range(1, 10+1):
+    credit += (payment) * (1.03 ** (i - 1))
+    print(i, round(credit - scholarship * 10, 2))
